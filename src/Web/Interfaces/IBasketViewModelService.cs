@@ -10,6 +10,7 @@ namespace Web.Interfaces
         Task DeleteBasketItemAsync(int productId);
         Task UpdateBasketAsync(Dictionary<int, int> quantities);
         Task TransferBasketAsync();
+        Task CheckoutAysnc(string street,string city,string? state, string country, string zipCode);
         
     }
 }
